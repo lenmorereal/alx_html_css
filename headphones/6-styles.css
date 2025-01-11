@@ -1,0 +1,33 @@
+/* Reset and general styles from previous tasks */
+
+/* Our Results Section */
+.our-results {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pentagon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #f06, #ffba00);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pentagon-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pentagon {
+        margin-bottom: 1rem;
+    }
+}
