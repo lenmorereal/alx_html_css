@@ -1,0 +1,76 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ff6600;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
